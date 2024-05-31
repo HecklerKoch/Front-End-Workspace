@@ -4,19 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>연습</title>
+    <link rel="stylesheet" href="/2_CSS/함 해보기.css">
   </head>
   <body>
-    <h1>레서 판다 관찰클럽 인원 모집</h1>
-
-    <img src="../resources/lethal panda.webp" width="400" alt="치명적인 판다" />
+    <p>
+    <table border="1">
+        <thead>
+          <th>
+            <h1 style="color: orange;">레서 판다 관찰클럽 인원 모집</h1>
+          </th>
+        </thead>
+    </table>
+  </p>
+    <img src="../resources/lethal panda.webp" width="439" alt="치명적인 판다" />
     <p>
       <ul>
         <li><b>모집 기간|</b> 2024년 5월 30일 ~ 2024년 6월 4일</li>
       </ul>
     </p>
-    <br><br>
-    <p><h2><u><i>레서 판다를 보면 어디에 좋을까?</i></u></h2></p>
+    <p><h2><u><i>레서 판다를 보면 무엇이 좋을까?</i></u></h2></p>
 
-    <p></p>
+    <p id="id1" >
+      레서판다를 보면 기분이 좋아지면서 스트레스가<br>
+      감소한다. <br>
+      레서판다를 쓰다듬으면 시선만이 아닌 촉감으로 <br>
+      행복함을 느낄수 있기 때문이다.
+    </p>
+    <br>
+    <a id="id2" href="https://namu.wiki/w/%EB%A0%88%EC%84%9C%ED%8C%90%EB%8B%A4">레서판다 관련 문서보기</a>
+    <p>
+      <form action="" method="post" id="id3">
+        <fieldset>
+          <legend>클럽 모집 신청</legend>
+          <label for="name">이름 : </label><input type="text" name="name" id="name"><br><br>
+          <label for="phone">전화번호 : </label><input type="text" name="phone" id="phone"><br><br>
+          <label for="addr">주소 : </label> <input type="text" name="addr" id="addr">
+        </fieldset>
+      </form>
+    </p>
+
   </body>
 </html>
