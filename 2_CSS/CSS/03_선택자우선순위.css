@@ -7,8 +7,8 @@
   color: red;
 }
 div {
-  background-color: teal !important;
-  color: white !important;
+  background-color: teal;
+  color: white;
   width: 200px;
   height: 200px;
 }
