@@ -5,11 +5,12 @@
 
 body {
   background-color: indianred;
+  background: linear-gradient(purple, pink);
+  height: 100vh;
 }
 .frame {
   text-align: center;
-  width: 280px;
-  height: 300px;
+  width: 320px;
   border: 2px solid white;
   /* margin : auto = 좌우의 값을 자동으로 대칭을 만들어 준다 */
   margin: 20px auto;
@@ -33,4 +34,23 @@ body {
   height: 150px;
   object-fit: cover;
   border-radius: 50%;
+  margin-top: 20px;
+}
+.frame h2 {
+  color: white;
+  margin-top: 10px;
+}
+.frame a {
+  border: 2px solid white;
+  display: block;
+  text-decoration: none;
+  color: white;
+  border-color: white;
+  padding: 12px;
+  margin: 15px;
+}
+.frame a:active {
+  background-color: white;
+  color: black;
+  border-color: white;
 }
