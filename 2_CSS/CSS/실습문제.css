@@ -22,17 +22,13 @@
   background-position: center;
   background-size: cover;
 }
-.button {
-  border: 3px solid;
+.frame a {
+  border: 3px solid white;
   background-color: indianred;
-  text-align: center;
   padding: 12px;
   margin: 15px;
 }
 #github {
-  padding-top: 20px;
-  top: 300px;
-  left: 160px;
   color: white;
   font-weight: 900;
   padding: auto;
@@ -44,11 +40,8 @@
   color: black;
 }
 #instagram {
-  top: 400px;
-  left: 160px;
   color: white;
   font-weight: 900;
-  padding-top: ;
 }
 #instagram:active {
   background-color: white;
