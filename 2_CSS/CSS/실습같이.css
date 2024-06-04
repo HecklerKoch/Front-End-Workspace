@@ -1,19 +1,21 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: indianred;
   background: linear-gradient(purple, pink);
   height: 100vh;
+  padding: 20px;
 }
 .frame {
   text-align: center;
   width: 320px;
   border: 2px solid white;
   /* margin : auto = 좌우의 값을 자동으로 대칭을 만들어 준다 */
-  margin: 20px auto;
+  margin: auto;
   /*position: absolute;
   top: 20px;
   left: 50%;
