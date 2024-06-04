@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: indianred;
+}
+.frame {
+  text-align: center;
+  width: 280px;
+  height: 300px;
+  border: 2px solid white;
+  /* margin : auto = 좌우의 값을 자동으로 대칭을 만들어 준다 */
+  margin: 20px auto;
+  /*position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%); */ /* 얘는 뒤에서 배움 */
+  border-radius: 5%;
+}
+.profile {
+  background-image: url(../../resources/bao.jpg);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin: 20px auto;
+}
+.frame img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
