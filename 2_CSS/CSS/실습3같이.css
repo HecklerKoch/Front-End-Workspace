@@ -1,0 +1,51 @@
+.header {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url(../../resources/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: color;
+  height: 100vh;
+  width: 300px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.header h2 {
+  font-size: 5rem;
+  border-bottom: 2px solid white;
+  padding: 15px;
+  margin-top: 45px;
+}
+.header nav {
+  margin-bottom: 100px;
+}
+.header a {
+  color: white;
+  display: block;
+  font-size: 1.5rem;
+  margin: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.content {
+  padding: 20px 20px 20px 320px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.content h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.content img {
+  width: 100%;
+  max-width: 50%;
+  align-self: center;
+  margin: 20px;
+}
+.content p {
+  line-height: 1.5;
+}

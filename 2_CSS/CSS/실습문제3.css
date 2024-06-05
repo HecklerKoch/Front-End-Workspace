@@ -1,0 +1,78 @@
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  height: 100vh;
+  width: 39vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  background-image: url(../../resources/background.jpg);
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  background-blend-mode: color;
+}
+header h1 {
+  border-bottom: 2px solid white;
+  padding: 15px;
+  color: white;
+  font-size: 80px;
+  margin-top: 45px;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+}
+header nav a {
+  color: white;
+  text-decoration: underline;
+  line-height: 45px;
+  font-size: 30px;
+}
+header nav a:active {
+  color: yellow;
+}
+section {
+  padding: 20px 20px 20px 350px;
+  display: flex;
+  flex-direction: column;
+}
+section h2 {
+  font-size: 37px;
+  font-weight: bolder;
+}
+section img {
+  width: 100%;
+  max-width: 700px;
+  align-self: center;
+  margin: 20px;
+}
+section p {
+  text-indent: 15px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+#topbutton {
+  color: white;
+  background-color: black;
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#topbutton:active {
+  background-color: white;
+  color: black;
+}
