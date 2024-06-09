@@ -25,7 +25,17 @@
   }
 }
 .square:nth-child(2) {
-  animation-delay: 1;
+  animation-delay: 120ms;
 }
 .square:nth-child(6) {
+  animation-delay: 120ms;
+}
+.square:nth-child(3) {
+  animation-delay: 240ms;
+}
+.square:nth-child(5)  {
+  animation-delay: 240ms;
+}
+.square:nth-child(4) {
+  animation-delay: 360ms;
 }
