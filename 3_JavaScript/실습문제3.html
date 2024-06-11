@@ -45,14 +45,26 @@
     <!-- Q3. 해당 배열을 이용하여 출력 결과대로 나오게 구현하세요 -->
     <script>
       const music = ["가요", "팝송", "클래식", "재즈", "OST"];
+      music.shift("가요")
+      music.pop("OST")
+      console.log(music)
+      music.unshift("OST")
+      music.pop("재즈")
+      music.splice(1, 1)
+      music.pop("클래식")
+      console.log(music)
 
       // ['팝송', '클래식', '재즈']
       // ['OST']
+
     </script>
 
     <!-- Q4. 해당 배열을 오름차순(작은 숫자 ~ 큰 숫자)으로 정렬해주세요  -->
     <script>
       const numbers = [7, -24, -8, 10, 17, -58];
+      numbers.sort()
+      numbers.sort((a, b)=> a - b)
+      console.log(numbers)
     </script>
   </body>
 </html>
