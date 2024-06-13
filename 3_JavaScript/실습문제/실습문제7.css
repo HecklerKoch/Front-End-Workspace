@@ -1,0 +1,31 @@
+body {
+  text-align: center;
+}
+img {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 15px;
+}
+button {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+#click {
+  background-color: hotpink;
+  color: navy;
+}
+#restart {
+  background-color: navy;
+  color: hotpink;
+}
+#result {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+}

@@ -7,15 +7,30 @@
   </head>
   <body>
     <!-- Q1. 100 ~ 200 정수 중 5의 배수가 아닌 수를 출력하세요 -->
-    <script></script>
+    <script>
+      for (let number = 100; number <= 200; number++) {
+        if (number % 5 === 0) {
+          continue;
+        }
+        console.log(number);
+      }
+    </script>
 
     <!-- Q2. 1 ~ 1000 정수 중 3의 배수의 합계를 출력하세요 -->
-    <script></script>
+    <script>
+      let three = 0;
+      for (let count = 1; count < 1000; count++) {
+        if (count % 3 === 0) {
+          three += count;
+        }
+      }
+      console.log(three);
+    </script>
 
     <!-- Q3. 문자열의 문자들을 하나씩 출력하세요 -->
     <script>
-      const str = "안녕하세요. 반갑습니다!".split("");
-      console.log(str);
+      const word = "안녕하세요. 반갑습니다!".split("");
+      console.log(word);
     </script>
 
     <!-- Q4. 배열 값 중 최대값을 출력하세요 -->
