@@ -23,12 +23,6 @@ function btn4() {
   const now = new Date();
   console.log(now);
 
-  console.log("년 : ", now.getFullYear()); //2024
-  console.log("월 : ", now.getMonth() + 1); // 5
-  console.log("일 : ", now.getDate()); // 12
-  console.log("시 : ", now.getHours()); // 12
-  console.log("분 : ", now.getMinutes()); // 13
-  console.log("초 : ", now.getSeconds()); //
 }
 
 function btn5() {

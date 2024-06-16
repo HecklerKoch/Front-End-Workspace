@@ -30,8 +30,45 @@ passwrd.addEventListener("input", function () {
 });
 
 const passwrdcheck = document.querySelector("#passwordcheck");
-const passwrdcheckSpan = document.querySelector("#passwordCheckSpan")
+const passwrdcheckSpan = document.querySelector("#passwordCheckSpan");
 
 passwrdcheck.addEventListener("input", function() {
-    if (passwrd.value === passwrdcheck.value)
+    if (passwrd.value === passwrdcheck.value) {
+      passwrdcheckSpan.style.color = "green";
+      passwrdcheckSpan.innerHTML = "비밀번호가 일치합니다.";
+    } else {
+      passwrdcheckSpan.style.color = "red";
+      passwrdcheckSpan.innerHTML = "비밀번호가 틀립니다.";
+    }
+})
+
+const Name = document.querySelector("#name")
+const NameSpan = document.querySelector("#nameSpan")
+
+Name.addEventListener("input", function() {
+  const regExp = /^[가-힣]{2,}$/
+  const check = regExp.test(Name.value)
+
+  if (check) {
+    NameSpan.innerHTML = " "
+  } else {
+    NameSpan.style.color = "red"
+    NameSpan.innerHTML = "알맞지 않는 형식입니다."
+  }
+})
+
+const Email = document.querySelector("#email")
+const EmailSpan = document.querySelector("#emailSpan")
+
+Email.addEventListener("input", function () {
+  const regExp = /^[!-~]+@[a-zA-Z]+.com+$/
+  const check = regExp.test(Email.value)
+
+  if (check) {
+    emailSpan.style.color = "green"
+    emailSpan.innerHTML = "쓸수 있는 이메일입니다."
+  } else {
+    emailSpan.style.color = "red"
+    emailSpan.innerHTML = "쓸수 없는 이메일입니다."
+  }
 })

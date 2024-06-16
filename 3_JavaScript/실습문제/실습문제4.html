@@ -53,12 +53,19 @@
     <!-- Q7. 배열에 있는 데이터들로 합계와 평균을 출력하세요 -->
     <script>
       const nums3 = [90, 85, 70, 86, 97];
+      const total = nums3[0] + nums3[1] + nums3[2] + nums3[3] + nums3[4]
+      const average = total / 3
+      console.log(Math.floor(average))
     </script>
 
     <!-- Q8. 두 배열의 각 데이터의 곱셈을 한 데이터들로 이루어진 새로운 배열을 생성하여 출력하세요 -->
     <script>
       const a1 = [12, 0, 2, 5, 4];
       const b1 = [5, 15, 6, 7, 8];
+      const c1 = a1[0] * a1[1] * a1[2] * a1[2] * a1[4]
+      const d1 = b1[0] * b1[1] * b1[2] * b1[3] * b1[4]
+      const e1 = [c1, d1]
+      console.log(e1)
     </script>
 
     <!-- Q9. 두 배열의 데이터 값이 서로 같은 데이터들만 이루어진 새로운 배열을 생성하여 출력하세요
@@ -77,6 +84,12 @@
         [87, 93, 62, 83],
         [98, 90, 77, 97],
       ];
+      const score1 = scores[0][0] + scores[0][1] + scores[0][2] + scores[0][3]
+      const score2 = scores[1][0] + scores[1][1] + scores[1][2] + scores[1][3]
+      const score3 = scores[2][0] + scores[2][0] + scores[2][0] + scores[2][0]
+      const Total = score1 + score2 + score3
+      const Average = Total / 3
+      console.log(Average)
     </script>
   </body>
 </html>
