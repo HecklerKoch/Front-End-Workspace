@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.registersection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 100vh;
+    flex-direction: column;
+}
+
+.registersection h1 i{
+    color: skyblue;
+    font-size: 50px;
+    margin-right: 500px;
+    margin-top: 10px;
+}
+.formlist form {
+    width: 600px;
+    height: 500px;
+    margin-top: 50px;
+}
+form div {
+    display: flex;
+    align-items: center;
+    width: 590px;
+    height: 75px;
+    border: 4px solid gray;
+    border-top: none;
+    border-bottom: 4px solid rgba(128, 128, 128, 0.5);
+    margin-top: -3px;
+}
+form div.user_id {
+    border-top: 4px solid gray;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+form div.user_birth{
+    border-bottom: 4px solid gray;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+form div input {
+    margin-top: 5px;
+    font-size: 25px;
+    border: none;
+    outline: none;
+}
+form div i {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: grey;
+    font-size: 30px;
+}
+form div.user_kkt_id i {
+
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 100%;
+    padding: 7px;
+    /* color: rgb(92, 64, 51); */
+    /* background-color: rgb(255, 234, 0); */
+}
+.submit_btn {
+    border: none;
+    width: 600px;
+    margin-top: 20px;
+}
+.submit_btn input{
+    width: 591px;
+    height: 75px;
+    border: 2px solid skyblue;
+    border-radius: 15px;
+    font-size: 25px;
+    color: white;
+    background-color: skyblue;
+}

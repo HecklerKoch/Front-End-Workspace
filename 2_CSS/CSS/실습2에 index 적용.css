@@ -27,7 +27,8 @@ header nav a :hover {
     color: white;
 }
 
-section {display: flex;
+section {
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
