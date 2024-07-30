@@ -10,20 +10,30 @@
 }
 .loginsection {
   position: absolute;
-  top: 50%;
-  width: 25%;
-  height: 60%;
+  top: 450px;
+  width: 500px;
+  height: 600px;
   padding: 40px;
   text-align: center;
   background-color: white;
   border-radius: 10px;
   transform: translateY(-50%);
 }
-.loginsection h1 {
+
+.loginsection div.back_to_menu {
+  margin-top: -30px;
+  width: 105%;
+}
+.loginsection div.back_to_menu i {
+  font-size: 30px;
+  margin-left: 477px;
+  color: black;
+}
+.loginsection div.mainsbj h1 {
   font-size: 45px;
   font-weight: 900;
   color: skyblue;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .loginsection div {
   display: flex;

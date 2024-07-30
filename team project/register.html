@@ -13,6 +13,11 @@
 </head>
 <body>
     <div class="registersection">
+        <div class="background">
+            <video class="video1" autoplay muted loop>
+                <source src="/video/26357-357839116.mp4">
+            </video>
+        </div>
         <h1><a href=""><i class="fa-solid fa-arrow-left"></i></a></h1>
 <div class="formlist">
 <form action="" method="post" id="regi_form" class="form">
@@ -32,15 +37,15 @@
     <i class="fa-regular fa-user"></i>
     <input type="text" name="name" id="name" placeholder="회원 이름" class="user_name" required>
 </div>
-<div class="user_kkt_id">
+<div class="user_kkt_id" id="user">
     <i class="fa-solid fa-comment"></i>
     <input type="text" name="kkt_id" id="kkt_id" placeholder="카카오톡 아이디(이메일)" class="user_kkt_id" autocapitalize="off">
 </div>
-<div class="user_email">
+<div class="user_email" id="user">
     <i class="fa-regular fa-envelope"></i>
     <input type="text" name="email" id="email" placeholder="회원 이메일" class="user_email" autocapitalize="off">
 </div>
-<div class="user_birth">
+<div class="user_birth" id="user">
     <i class="fa-solid fa-calendar-days"></i>
     <input type="text" name="birth" id="birth" placeholder="회원 생년월일" class="user_birth" required>
 </div>
