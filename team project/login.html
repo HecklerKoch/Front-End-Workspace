@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="login">
-      <div class="loginsection">
+      <form class="loginsection" method="post">
         <div class="back_to_menu">
           <a href=""><i class="fa-solid fa-xmark"></i></a>
         </div>
@@ -24,7 +24,6 @@
             id="id"
             name="id"
             placeholder="아이디"
-            required
           />
         </div>
         <div class="user_login">
@@ -35,16 +34,15 @@
             id="password"
             name="password"
             placeholder="비밀번호"
-            required
           />
         </div>
         <div class="login_btn">
-          <input type="submit" value="로그인" />
+          <input type="submit" value="로그인" id="loginBtn" />
         </div>
         <div class="kkt_login_btn">
           <img src="photo/kakao_login_large_wide.png" alt="" />
         </div>
-      </div>
+      </form>
     </div>
     <button class="open_login">로그인</button>
     <script src="login.js"></script>

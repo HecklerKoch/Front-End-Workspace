@@ -22,7 +22,7 @@
 
 .loginsection div.back_to_menu {
   margin-top: -30px;
-  width: 105%;
+  width: 95%;
 }
 .loginsection div.back_to_menu i {
   font-size: 30px;
@@ -67,6 +67,7 @@ div.user_login input {
   background-color: skyblue;
   border-radius: 10px;
   margin-top: 40px;
+  cursor: pointer;
 }
 .loginsection .kkt_login_btn img {
   margin-top: 25px;
