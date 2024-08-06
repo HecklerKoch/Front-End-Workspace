@@ -6,6 +6,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="/2_CSS/CSS/reset.css" />
     <link rel="stylesheet" href="/team project/calander.css" />
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var calendarEl = document.getElementById("calendar");
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: "dayGridMonth",
+        });
+        calendar.render();
+      });
+    </script>
   </head>
   <body>
     <header>
@@ -34,7 +44,9 @@
     </header>
     <fieldset class="date">
       <legend>DATE</legend>
+      <input type="date" />
     </fieldset>
+    <div id="calendar"></div>
     <script
       src="https://kit.fontawesome.com/ef885bd654.js"
       crossorigin="anonymous"
