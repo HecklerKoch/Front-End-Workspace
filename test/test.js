@@ -6,13 +6,27 @@ document.addEventListener("DOMContentLoaded", function () {
   var calendarEl = document.getElementById("calendar");
   var checkbox = document.getElementById("drop-remove");
 
+  // initialize the external events
+  // -----------------------------------------------------------------
+
+  new Draggable(containerEl, {
+    itemSelector: ".fc-event",
+    eventData: function (eventEl) {
+      return {
+        title: eventEl.innerText,
+      };
+    },
+  });
+
+  // initialize the calendar
+  // -----------------------------------------------------------------
+
   var calendar = new Calendar(calendarEl, {
     headerToolbar: {
       left: "prev,next today",
       center: "title",
       right: "dayGridMonth,timeGridWeek,timeGridDay",
     },
-    selectable: true,
     editable: true,
     droppable: true, // this allows things to be dropped onto the calendar
     drop: function (info) {
