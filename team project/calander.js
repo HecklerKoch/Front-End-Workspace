@@ -17,10 +17,30 @@ document.addEventListener("DOMContentLoaded", function () {
         .innerText.split(" ")[0];
       var clickedDate = info.dateStr;
       var selectedMonth = info.date.getMonth(); // 0부터 시작하는 월 인덱스
-      if (selectedMonth === 7 && month === "August") {
-        // 예: 7월 (8월의 경우 7로 설정)
+      // 예: 7월 (8월의 경우 7로 설정)
+      if (selectedMonth === 0 && month === "January") {
+        showModal(clickedDate);
+      } else if (selectedMonth === 1 && month === "February") {
+        showModal(clickedDate);
+      } else if (selectedMonth === 2 && month === "March") {
+        showModal(clickedDate);
+      } else if (selectedMonth === 3 && month === "April") {
+        showModal(clickedDate);
+      } else if (selectedMonth === 4 && month === "May") {
+        showModal(clickedDate);
+      } else if (selectedMonth === 5 && month === "June") {
         showModal(clickedDate);
       } else if (selectedMonth === 6 && month === "July") {
+        showModal(clickedDate);
+      } else if (selectedMonth === 7 && month === "August") {
+        showModal(clickedDate);
+      } else if (selectedMonth === 8 && month === "September") {
+        showModal(clickedDate);
+      } else if (selectedMonth === 9 && month === "October") {
+        showModal(clickedDate);
+      } else if (selectedMonth === 10 && month === "November") {
+        showModal(clickedDate);
+      } else if (selectedMonth === 11 && month === "December") {
         showModal(clickedDate);
       }
     },
@@ -28,10 +48,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   calendar.render();
 
-  function showModal(date) {
+  function showModal() {
     var modal = document.getElementById("myModal");
-    var modalContent = document.getElementById("modalContent");
-    modalContent.innerHTML = "<p>Selected Date: " + date + "</p>";
     modal.style.display = "block";
   }
 

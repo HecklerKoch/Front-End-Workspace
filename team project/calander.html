@@ -11,7 +11,7 @@
   <body>
     <header>
       <div class="addgroup">
-        <button><i class="fa-solid fa-plus"></i></button>
+        <button class="btn-add"><i class="fa-solid fa-plus"></i></button>
       </div>
       <div class="group" id="group1">
         <i class="fa-solid fa-user-group"></i>
@@ -36,9 +36,22 @@
     <div id="calendar-container">
       <div id="calendar"></div>
     </div>
-    <div id="myModal" style="display:none;">
-      <div id="modalContent"></div>
-      <i class="fa-solid fa-xmark" id="X"></i>
+
+    <div id="myModal" style="display: none">
+      <div id="modalContent">
+        <header class="mdl-header">
+          <p class="head-wrd">일정 추가하기</p>
+          <i class="fa-solid fa-xmark" id="X"></i>
+        </header>
+        <button class="section" id="one"></button>
+        <button class="section" id="two"></button>
+        <button class="section" id="three"></button>
+        <button class="section" id="four"></button>
+        <button class="section" id="five"></button>
+        <button class="section" id="six">추가</button>
+      </div>
+    </div>
+
     <script
       src="https://kit.fontawesome.com/ef885bd654.js"
       crossorigin="anonymous"
