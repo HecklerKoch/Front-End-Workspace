@@ -1,9 +1,14 @@
+const modal = document.getElementById("myModal");
+const ShowModal = document.getElementById("six");
+const Modal2 = document.getElementById("modal2");
+const exit = document.getElementById("X2");
+
 document.addEventListener("DOMContentLoaded", function () {
-  var Calendar = FullCalendar.Calendar;
+  const Calendar = FullCalendar.Calendar;
 
-  var calendarEl = document.getElementById("calendar");
+  const calendarEl = document.getElementById("calendar");
 
-  var calendar = new Calendar(calendarEl, {
+  const calendar = new Calendar(calendarEl, {
     headerToolbar: {
       left: "prev,next today",
       center: "title",
@@ -15,8 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
       const month = calendarEl
         .querySelector(".fc-toolbar-title")
         .innerText.split(" ")[0];
-      var clickedDate = info.dateStr;
-      var selectedMonth = info.date.getMonth(); // 0부터 시작하는 월 인덱스
+      const clickedDate = info.dateStr;
+      const selectedMonth = info.date.getMonth(); // 0부터 시작하는 월 인덱스
       // 예: 7월 (8월의 경우 7로 설정)
       if (selectedMonth === 0 && month === "January") {
         showModal(clickedDate);
@@ -49,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
   calendar.render();
 
   function showModal() {
-    var modal = document.getElementById("myModal");
+    const modal = document.getElementById("myModal");
     modal.style.display = "block";
   }
 
@@ -57,3 +62,21 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("myModal").style.display = "none";
   });
 });
+
+ShowModal.addEventListener("click", () => {
+  Modal2.style.display = "block";
+  modal.style.display = "none";
+});
+
+exit.addEventListener("click", () => {
+  Modal2.style.display = "none";
+  modal.style.display = "block";
+});
+// function ShowModal() {
+//   const Modal = document.getElementById("myModal2");
+//   Modal.style.display = "block";
+// }
+
+// document.getElementById("X2").addEventListener("click", function () {
+//   document.getElementById("MyModal").style.display = "none";
+// });
