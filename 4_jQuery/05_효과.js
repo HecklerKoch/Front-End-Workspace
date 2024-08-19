@@ -41,6 +41,6 @@ $(".menu").click((e) => {
   // 하나의 콘텐츠만 slideDown!
   $(".contents").slideUp();
   if (content.css("display") === "none") {
-    content.slideDown(500);
+    content.slideUp(500);
   }
 });
